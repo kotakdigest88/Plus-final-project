@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather app</title>
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href= "src/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 </head>
 <div class="weather-app">
@@ -17,7 +20,7 @@
    </form> 
 </header>
 <main>
-    <div class="weather-app-data">
+<div class="weather-app-data">
     <div>
         <h1 class="weather-app-city" id="weather-app-city">Paris</h1>
         <p class="weather-app-details">
@@ -26,15 +29,22 @@
             <br />
           Humidity: <strong id="humidity"></strong>,
            Wind: <strong id="wind-speed"></strong>
+
+           <div class="weather-forecast" id ="forecast">
+            <div class="row">
+                <div class="col-2">
+                   
+                </div>
+            </div>
+        </div>
         </p>
     </div>
     <div class="weather-app-temperature-container">
-<div id="icon">
-            </div>
-
+        <div id="icon"></div>
        <div class="weather-app-temperature" id="temperature">12</div>
        <div class="weather-app-unit" id="unit">°C</div>  
     </div>
+    
 </div>
 </main>
 <footer>

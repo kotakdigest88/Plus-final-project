@@ -52,8 +52,28 @@ function showWeather (response){
         let searchInput = document.querySelector("#search-form-input");
     
         searchCity(searchInput.value);
+        displayForecast();
     }
+
+    function displayForecast (){
+        
+        let days = ["Sun", "Mon", "Tue", "Wed", "Fri", "Sat"];
+        let forecastHtml = " ";
+        days.forEach(function (day){
+            forecastHtml = forecastHtml + 
+            `<div class ="weather-forecast-day">${day}</div>
+            <div class = "weather-forecast-icon">emoji</div>
+            <div class="weather-forecast-temperature">
+                <span class="weather-forecast-temperature-max">20°</span>
+                <span class="weather-forecast-temperature-min">10°</span>
+            </div>`;
+        }
+    );
+    let forecast = document.querySelector("#forecast");
+forecastElement.innerHTML = forecastHtml;
+}
+
     
-    
+
     let searchFormElement = document.querySelector("#search-form");
     searchFormElement.addEventListener("submit", handleSearchSubmit);
