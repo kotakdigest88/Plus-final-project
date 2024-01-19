@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forecast Weather</title>
+    <title>Weather app</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 </head>
-<body>
-    
-</body>
+<div class="weather-app">
+<header>
+   <form class="search-form" id="search-form">
+    <input type="search" placeholder="Enter a city.." required class="search-form-input" id="search-form-input" />
+    <input type="submit" value="Search" class="search-form-button"/>
+   </form> 
+</header>
+<main>
+    <div class="weather-app-data">
+    <div>
+        <h1 class="weather-app-city" id="weather-app-city">Paris</h1>
+        <p class="weather-app-details">
+            <span id="time"></span>,
+            <span id="description"></span> 
+            <br />
+          Humidity: <strong id="humidity"></strong>,
+           Wind: <strong id="wind-speed"></strong>
+        </p>
+    </div>
+    <div class="weather-app-temperature-container">
+<div id="icon">
+            </div>
+
+       <div class="weather-app-temperature" id="temperature">12</div>
+       <div class="weather-app-unit" id="unit">°C</div>  
+    </div>
+</div>
+</main>
+<footer>
+    This project was coded by <a href="https://github.com/kotakdigest88" target="_blank">nsalina</a>, is open-sourced on <a href="https://github.com/kotakdigest88/homework-7-vanilla-weather" target="_blank">GitHub</a> and hosted on <a href="https://www.netlify.com/" target="_blank">Netlify</a> 
+</footer>
+</div>
+<script src="src/index.js"></script>
 </html>
